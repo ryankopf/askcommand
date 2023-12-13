@@ -17,7 +17,7 @@ async fn main() {
     text.pop();
 
     let client = Client::new();
-    let system_instructions = "You generate command line commands for linux.";
+    let system_instructions = "This is a command line tool that generates commands for linux, without explanations.";
     let request = CreateChatCompletionRequestArgs::default()
         .max_tokens(512u16)
         .model("gpt-4")
