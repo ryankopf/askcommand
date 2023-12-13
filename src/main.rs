@@ -1,6 +1,6 @@
 use std::time::Duration;
 use async_openai::{
-    types::{Voice, SpeechModel, CreateSpeechRequestArgs, CreateChatCompletionRequestArgs, ChatCompletionRequestSystemMessageArgs, ChatCompletionRequestUserMessageArgs, ChatCompletionRequestAssistantMessageArgs},
+    types::{CreateChatCompletionRequestArgs, ChatCompletionRequestSystemMessageArgs, ChatCompletionRequestUserMessageArgs},
     Client,
 };
 
@@ -17,7 +17,6 @@ async fn main() {
     text.pop();
 
     let client = Client::new();
-    // let system_instructions = tokio::fs::read_to_string("systeminstruction.txt").await.expect("Unable to read system instructions.");
     let system_instructions = "You generate command line commands for linux.";
     let request = CreateChatCompletionRequestArgs::default()
         .max_tokens(512u16)
