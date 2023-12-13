@@ -2,6 +2,13 @@
 name = "askcommand"
 version = "0.1.0"
 edition = "2021"
+description = "A command-line tool to generate Linux commands using OpenAI's GPT-4"
+license = "MIT"
+repository = "https://github.com/ryankopf/askcommand"
+documentation = "https://github.com/ryankopf/askcommand" # if you have documentation hosted, like on docs.rs
+authors = ["Ryan Kopf <github@ryankopf.com>"]
+keywords = ["linux", "command-line", "openai", "gpt-4"]
+categories = ["command-line-utilities", "development-tools"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

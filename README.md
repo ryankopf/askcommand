@@ -15,10 +15,13 @@ This Rust application utilizes the `async_openai` crate to interact with OpenAI'
 3. Run `cargo build` to compile the project.
 
 ### Usage
-Run the application with a query to generate Linux commands:
+Install the application with a query to generate Linux commands:
 
 ```
-cargo run -- "your query here"
+git clone https://github.com/ryankopf/askcommand.git
+cd askcommand
+cargo build --release
+sudo mv target/release/askcommand /usr/local/bin/ask
 ```
 
 ## Features
