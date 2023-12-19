@@ -24,6 +24,12 @@ cargo build --release
 sudo mv target/release/askcommand /usr/local/bin/ask
 ```
 
+Don't forget to set your environment variables. Edit your ~/.bashrc file and then run the command `source ~/.bashrc`
+
+```
+export OPENAI_API_KEY='sk-yourkeyhere'
+```
+
 ## Features
 - Generates Linux commands using OpenAI's GPT-4 model.
 - Handles user inputs through command line arguments.
